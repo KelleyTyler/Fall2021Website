@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    //margin: 0 auto;
+    width: 50em;
+	//border:0.2em solid blue;
+}
+
+h1 {
+	color: blue;
+	margin-top: 0;
+}
+main {
+	//float:left;
+    padding: 0.5em;
+	margin: 0.1em;
+	background-color:lightblue;
+	//border: 3px solid blue;
+}
+tr.heads>td{
+	//float:top;
+	//background-color:white;
+	text-align: left;
+	//border:0.4em solid Black;
+	padding:.5em .5em .5em .5em;
+	margin: .5em .5em .5em 0em;
+	background-color:lightblue;
+	max-width:8em;
+}
+footer{
+	//float:left;
+	bottom:0;
+	border:0.1em solid black;
+	margin: 0.1em 0.0em 0.0em 0.1em;
+	padding: 0.2em;
+}
+
+main>article {
+	display:grid;
+	grid-template-columns: repeat(1,1);
+	grid-template-rows: auto;
+	gap:3px;
+	row-gap:2px;
+	background-color:white;
+	//border:.2em solid black;
+	margin:1em;
+	padding:0.5em;
+}
+article>h3
+{
+	grid-column:2;
+	grid-row:1;
+	margin-left:0.3em;
+}
+article>img
+{
+	grid-column: 1;
+	grid-row-start:1;
+	grid-row-end:8;
+	border: .2em solid black;
+	margin:1em;
+	min-width:60%;
+	max-height:100%;
+	min-height:60%;
+	max-width:100%;
+}
+article>p
+{
+	grid-column:2;
+	grid-row:2;
+	float:left;
+	
+	border:1px solid blue;
+	display:vertical-inline;
+}
+
+.menuItemPrice
+{
+	grid-column:2;
+	grid-row:3;
+	float:right;
+	display:vertical-inline;
+	border:1px solid red;
+}
