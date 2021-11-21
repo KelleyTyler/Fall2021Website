@@ -59,9 +59,9 @@ article>img
 	grid-row-end:8;
 	border: .2em solid black;
 	margin:1em;
-	min-width:60%;
+	min-width:80%;
 	max-height:100%;
-	min-height:60%;
+	min-height:80%;
 	max-width:100%;
 }
 article>p
