@@ -2,11 +2,10 @@
 var $ = function(id) { return document.getElementById(id); };
 
 var saveReservation=function(){
-	sessionStorage.arrivalDate=$("arrival_date").value;
-	sessionStorage.nights=$("nights").value;
+	sessionStorage.arrivalDate=$("a_Date").value;
 	sessionStorage.adults=$("adults").value;
 	sessionStorage.children=$("children").value;
-	if($("business").checked){
+	/*if($("business").checked){
 		sessionStorage.roomType=$("business").value;
 	}
 	else if($("standard").checked)
@@ -24,7 +23,7 @@ var saveReservation=function(){
 	}
 	else{
 		sessionStorage.smoking="no";
-	}
+	}*/
 	sessionStorage.name=$("name").value;
 	sessionStorage.email=$("email").value;
 	sessionStorage.phone=$("phone").value;
